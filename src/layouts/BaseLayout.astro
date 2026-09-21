@@ -5,9 +5,42 @@ import Footer from "../components/Footer.astro";
 const {
   title = "gReader App - A fast, open-source RSS reader",
   description = "A fast, focused, open-source RSS reader inspired by the classic gReader workflow. No ads, no subscription, no algorithmic feed.",
-  image = "/assets/img/app/feeds.png",
+  image = "/assets/brand/feature.png",
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
+const origin = Astro.site ?? Astro.url.origin;
+const ogImage = new URL(image, origin);
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "gReader App",
+  alternateName: "gReader",
+  url: "https://greaderapp.com/",
+  description,
+  applicationCategory: "NewsApplication",
+  operatingSystem: "Web, Android",
+  inLanguage: "en",
+  isAccessibleForFree: true,
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  author: {
+    "@type": "Organization",
+    name: "Laravel Company",
+    url: "https://laravelcompany.com",
+    email: "info@laravelcompany.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "7 High Street",
+      addressLocality: "Basildon",
+      addressRegion: "Essex",
+      postalCode: "SS14 1AB",
+      addressCountry: "GB",
+    },
+  },
+  codeRepository: "https://github.com/laravelcompany/app.greaderapp.com",
+  screenshot: new URL("/assets/brand/feature.png", origin).href,
+  featureList:
+    "RSS and Atom feeds, offline reading, podcasts, voice reading, OPML import and export, folders, themes",
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -22,8 +55,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL(image, Astro.site ?? Astro.url.origin)} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:image:alt" content="gReader App - RSS reading, without the noise" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
