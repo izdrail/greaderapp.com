@@ -2,46 +2,38 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-const { title = "greaderapp.com - Modern, privacy-respecting RSS/news reader" } = Astro.props;
+const {
+  title = "gReader App - A fast, open-source RSS reader",
+  description = "A fast, focused, open-source RSS reader inspired by the classic gReader workflow. No ads, no subscription, no algorithmic feed.",
+  image = "/assets/img/app/feeds.png",
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin);
 ---
 <!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="greaderapp.com - The open-source version of the old gReader news app.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#10130f" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL(image, Astro.site ?? Astro.url.origin)} />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>{title}</title>
-    <link rel="icon" href="/assets/img/favicon.png">
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/launch.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <Header />
-    <slot />
+    <main id="main"><slot /></main>
     <Footer />
-    
-    <!-- ***** All jQuery Plugins ***** -->
-    <!-- jQuery(necessary for all JavaScript plugins) -->
-    <script is:inline src="/assets/js/vendor/jquery.min.js"></script>
-    <!-- Bootstrap js -->
-    <script is:inline src="/assets/js/vendor/popper.min.js"></script>
-    <script is:inline src="/assets/js/vendor/bootstrap.min.js"></script>
-    <!-- Plugins js -->
-    <script is:inline src="/assets/js/vendor/owl.carousel.min.js"></script>
-    <script is:inline src="/assets/js/vendor/gallery.min.js"></script>
-    <!-- Slider js -->
-    <script is:inline src="/assets/js/vendor/slider.min.js"></script>
-    <!-- Countdown js -->
-    <script is:inline src="/assets/js/vendor/countdown.min.js"></script>
-    <!-- Counterup js -->
-    <script is:inline src="/assets/js/vendor/counterup.js"></script>
-    <!-- AOS js -->
-    <script is:inline src="/assets/js/vendor/aos.js"></script>
-    <!-- WOW js -->
-    <script is:inline src="/assets/js/vendor/wow.min.js"></script>
-    <!-- Waypoint js -->
-    <script is:inline src="/assets/js/vendor/waypoint.js"></script>
-    <!-- Active js -->
-    <script is:inline src="/assets/js/main.js"></script>
-</body>
+  </body>
 </html>
