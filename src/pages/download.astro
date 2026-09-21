@@ -1,0 +1,124 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+---
+<MarketingLayout title="download - greaderapp.com">
+
+	<div class="main">
+		<!-- ***** Preloader Start ***** -->
+		<div class="preloader-main">
+			<div class="preloader-wapper">
+				<svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+					<defs>
+						<filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo" />
+						</filter>
+					</defs>
+					<g filter="url(#goo)">
+						<circle class="dot" cx="50" cy="50" r="25" fill="#8731E8" />
+						<circle class="dot" cx="50" cy="50" r="25" fill="#8731E8" />
+					</g>
+				</svg>
+				<div>
+					<div class="loader-section section-left"></div>
+					<div class="loader-section section-right"></div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Preloader End ***** -->
+
+		
+
+		<!-- ***** Download Area Start ***** -->
+		<section id="home" class="download-page has-overlay overlay-gradient vh-100">
+			<div class="container h-100">
+				<div class="row align-items-center h-100">
+					<div class="col-12 col-md-7">
+						<h1 class="text-white">Your download should begin automatically</h1>
+						<p class="text-white mt-4">If it doesn’t start automatically, please click <a href="thank-you.html" class="text-white">here</a> to download manually.</p>
+					</div>
+					<div class="col-12 col-md-5">
+						<!-- Hero Thumb -->
+						<div class="hero-thumb" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+							<img src="/assets/img/content/thumb-1.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Download Area End ***** -->
+
+		<!--====== Modal Search Area Start ======-->
+		<div id="search" class="p-0 modal fade">
+			<div class="modal-dialog modal-dialog-slideout">
+				<div class="modal-content full">
+					<div class="modal-header" data-bs-dismiss="modal">
+						Search <i class="icon-close"></i>
+					</div>
+					<div class="modal-body">
+						<form class="row">
+							<div class="col-12 align-self-center p-0">
+								<div class="row">
+									<div class="col-12 p-0 pb-3">
+										<h2 class="modal-heading mt-0 mb-3">What are you looking for?</h2>
+										<form class="contact-form outlined">
+											<div class="form-floating mb-3">
+												<input type="text" class="form-control" name="keywords" id="keywords" placeholder="Enter Keywords">
+												<label for="keywords">Enter Keywords</label>
+											</div>
+											<input type="submit" class="search-submit" value="Search">
+										</form>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--====== Modal Search Area End ======-->
+
+		<!--====== Modal Responsive Menu Area Start ======-->
+		<div id="menu" class="modal fade p-0">
+			<div class="modal-dialog modal-dialog-slideout">
+				<div class="modal-content full">
+					<div class="modal-header" data-bs-dismiss="modal">
+						Menu <i class="icon-close"></i>
+					</div>
+					<div class="menu modal-body">
+						<div class="row w-100">
+							<div class="items p-0 col-12 text-center">
+								<!-- Append [navbar] -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--====== Modal Responsive Menu Area End ======-->
+	</div>
+
+
+	<!-- ***** All jQuery Plugins ***** -->
+
+	<!-- jQuery(necessary for all JavaScript plugins) -->
+	
+
+	<!-- Bootstrap js -->
+	
+	
+
+	<!-- Plugins js -->
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- Main js -->
+	
+
+</MarketingLayout>

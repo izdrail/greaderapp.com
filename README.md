@@ -41,3 +41,17 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Astro Project Details
+
+This is an Astro.js project that ports the static greaderapp.com site into a modern Astro setup.
+
+### Development
+- Run `npm run dev` to start the development server.
+- Run `npm run build` to create a static build in the `dist` directory.
+- Run `npm run preview` to preview the build locally.
+
+### Structure
+- `src/pages/`: Contains the Astro versions of the original `design/*.html` files. They are compiled with `build.format: 'file'` so that the exact paths (like `/pricing.html`) remain functional.
+- `src/layouts/`: Contains `BaseLayout.astro`, which includes the global `<head>` section, stylesheets, and vendor scripts to perfectly maintain the original visual design and interactions.
+- `public/assets/`: The original `design/assets` are kept intact here to preserve paths.

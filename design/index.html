@@ -1,8 +1,27 @@
----
-import MarketingLayout from '../layouts/MarketingLayout.astro';
----
-<MarketingLayout title="index - greaderapp.com">
+<!doctype html>
+<html class="no-js" lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Title  -->
+	<title>sApp - App Landing Page</title>
+
+	<!-- Favicon  -->
+	<link rel="icon" href="assets/img/favicon.png">
+
+	<!-- ***** All CSS Files ***** -->
+
+	<!-- Style css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
 	<div class="main">
 		<!-- ***** Preloader Start ***** -->
 		<div class="preloader-main">
@@ -27,7 +46,162 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 		</div>
 		<!-- ***** Preloader End ***** -->
 
-		
+		<!-- ***** Header Start ***** -->
+		<header id="header">
+			<!-- Navbar -->
+			<nav data-aos="zoom-out" data-aos-delay="800" class="navbar gameon-navbar navbar-expand">
+				<div class="container header">
+
+					<!-- Logo -->
+					<a class="navbar-brand invert" href="index.html">
+						<img src="assets/img/logo/logo.png" alt="Brand Logo" />
+					</a>
+
+					<div class="ms-auto"></div>
+
+					<!-- Navbar Nav -->
+					<ul class="navbar-nav items mx-auto">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link">Home <i class="icon-arrow-down"></i></a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="index.html" class="nav-link">Homepage-1</a>
+								</li>
+								<li class="nav-item">
+									<a href="index-2.html" class="nav-link active">Homepage-2</a>
+								</li>
+								<li class="nav-item">
+									<a href="index-3.html" class="nav-link">Homepage-3</a>
+								</li>
+								<li class="nav-item">
+									<a href="index-4.html" class="nav-link">Homepage-4</a>
+								</li>
+								<li class="nav-item">
+									<a href="index-5.html" class="nav-link">Homepage-5</a>
+								</li>
+								<li class="nav-item">
+									<a href="index-6.html" class="nav-link">Homepage-6</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link smooth-anchor" href="#features">Features</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link">Pages <i class="icon-arrow-down"></i></a>
+							<ul class="dropdown-menu">
+								<li class="nav-item dropdown">
+									<a href="#" class="nav-link">Inner Pages <i class="icon-arrow-right"></i></a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a href="pricing.html" class="nav-link">Pricing</a>
+										</li>
+										<li class="nav-item">
+											<a href="download.html" class="nav-link">Download</a>
+										</li>
+										<li class="nav-item">
+											<a href="newsletter.html" class="nav-link">Newsleter</a>
+										</li>
+										<li class="nav-item">
+											<a href="thank-you.html" class="nav-link">Thank you</a>
+										</li>
+										<li class="nav-item">
+											<a href="coming-soon.html" class="nav-link">Coming Soon</a>
+										</li>
+										<li class="nav-item">
+											<a href="404.html" class="nav-link">404</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="#" class="nav-link">Blog Pages <i class="icon-arrow-right"></i></a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a href="blog-two-column.html" class="nav-link">Blog 2 Column</a>
+										</li>
+										<li class="nav-item">
+											<a href="blog-three-column.html" class="nav-link">Blog 3 Column</a>
+										</li>
+										<li class="nav-item">
+											<a href="blog-left-sidebar.html" class="nav-link">Blog Left Sidebar</a>
+										</li>
+										<li class="nav-item">
+											<a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="#" class="nav-link">Blog Single <i class="icon-arrow-right"></i></a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a href="blog-single-left-sidebar.html" class="nav-link">Blog Single Left Sidebar</a>
+										</li>
+										<li class="nav-item">
+											<a href="blog-single-right-sidebar.html" class="nav-link">Blog Single Right Sidebar</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="#" class="nav-link">Accounts <i class="icon-arrow-right"></i></a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a href="login.html" class="nav-link">Login</a>
+										</li>
+										<li class="nav-item">
+											<a href="signup.html" class="nav-link">Signup</a>
+										</li>
+										<li class="nav-item">
+											<a href="forgot.html" class="nav-link">Reset Password</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="reviews.html" class="nav-link">Reviews</a>
+								</li>
+								<li class="nav-item">
+									<a href="faq.html" class="nav-link">FAQ</a>
+								</li>
+								<li class="nav-item">
+									<a href="contact.html" class="nav-link">Contact</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link disabled">More Coming Soon</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link smooth-anchor" href="#screenshots">Screenshots</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link smooth-anchor" href="#pricing">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link smooth-anchor" href="#contact">Contact</a>
+						</li>
+					</ul>
+
+					<!-- Navbar Icons -->
+					<ul class="navbar-nav icons">
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#search">
+								<i class="icon-magnifier"></i>
+							</a>
+						</li>
+					</ul>
+
+					<!-- Navbar Toggler -->
+					<ul class="navbar-nav toggle">
+						<li class="nav-item">
+							<a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#menu">
+								<i class="icon-menu m-0"></i>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</header>
+		<!-- ***** Header End ***** -->
 
 		<!-- ***** Hero Section Start ***** -->
 		<section id="home" class="hero-section layout-2">
@@ -40,14 +214,14 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 						<!-- Hero Content -->
 						<div class="hero-content">
 							<h1>Creative way to Showcase your App</h1>
-							<p class="sub-heading my-4">Present your app in a unique and engaging manner with gReader App, designed to highlight its features and attract potential users effectively.</p>
+							<p class="sub-heading my-4">Present your app in a unique and engaging manner with sApp, designed to highlight its features and attract potential users effectively.</p>
 							<a href="pricing.html" class="btn swap-icon">Get Started<i class="icon bi bi-arrow-right-short"></i></a>
 						</div>
 					</div>
 					<div class="col-12 col-md-5 col-lg-5 mt-4 mt-md-0">
 						<!-- Hero Thumb -->
 						<div class="hero-thumb mx-auto" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-							<img src="/assets/img/content/thumb-1.png" alt="">
+							<img src="assets/img/content/thumb-1.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -63,7 +237,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 						<!-- Intro -->
 						<div class="intro text-center mb-4">
 							<h2 class="title">Explore Premium Features</h2>
-							<p>Discover the unique features of gReader App that set it apart from the competition, designed to deliver unmatched performance and seamless user experiences.</p>
+							<p>Discover the unique features of sApp that set it apart from the competition, designed to deliver unmatched performance and seamless user experiences.</p>
 						</div>
 					</div>
 				</div>
@@ -145,7 +319,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 			<div class="container">
 				<div class="row justify-content-between align-items-center">
 					<div class="col-12 col-lg-6 mx-auto text-center d-none d-md-block">
-						<img src="/assets/img/content/thumb-4.png" alt="">
+						<img src="assets/img/content/thumb-4.png" alt="">
 					</div>
 
 					<div class="col-12 col-lg-6">
@@ -273,7 +447,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 					</div>
 
 					<div class="col-12 col-lg-4 d-none d-md-block">
-						<img src="/assets/img/content/thumb-5.png" alt="">
+						<img src="assets/img/content/thumb-5.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -287,29 +461,29 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 					<div class="col-12 col-md-10 col-lg-7">
 						<!-- Intro -->
 						<div class="intro text-center">
-							<h2 class="title text-white layout-2 mt-0">How gReader App works?</h2>
-							<p class="text-white">Explore the intuitive and powerful features of gReader App, making it easy to build, customize, and launch effective landing pages in just a few steps.</p>
+							<h2 class="title text-white layout-2 mt-0">How sApp works?</h2>
+							<p class="text-white">Explore the intuitive and powerful features of sApp, making it easy to build, customize, and launch effective landing pages in just a few steps.</p>
 						</div>
 					</div>
 				</div>
 				<div class="row items">
 					<div class="col-12 col-md-4 item">
 						<div class="icon-box text-center px-3">
-							<img class="avatar-md" src="/assets/img/content/step-1.png" alt="">
+							<img class="avatar-md" src="assets/img/content/step-1.png" alt="">
 							<h4 class="text-white">Install the App</h4>
 							<p class="text-white">Easily download and install the app from your preferred app store to begin your journey and access all its exciting features.</p>
 						</div>
 					</div>
 					<div class="col-12 col-md-4 item">
 						<div class="icon-box text-center px-3">
-							<img class="avatar-md" src="/assets/img/content/step-2.png" alt="">
+							<img class="avatar-md" src="assets/img/content/step-2.png" alt="">
 							<h4 class="text-white">Setup your profile</h4>
 							<p class="text-white">Create and customize your profile to tailor your experience and connect with others quickly and effortlessly, ensuring a seamless journey.</p>
 						</div>
 					</div>
 					<div class="col-12 col-md-4 item">
 						<div class="icon-box text-center px-3">
-							<img class="avatar-md" src="/assets/img/content/step-3.png" alt="">
+							<img class="avatar-md" src="assets/img/content/step-3.png" alt="">
 							<h4 class="text-white">Enjoy the features!</h4>
 							<p class="text-white">Utilize the app's powerful features designed to enhance your experience and productivity, helping you achieve more with ease.</p>
 						</div>
@@ -332,7 +506,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 								<span>Interface</span>
 							</span>
 							<h2 class="title">Simple &amp; Beautiful Interface</h2>
-							<p>Clean and elegant interface with gReader App that combines simplicity with beauty, ensuring a smooth and enjoyable user journey.</p>
+							<p>Clean and elegant interface with sApp that combines simplicity with beauty, ensuring a smooth and enjoyable user journey.</p>
 						</div>
 					</div>
 				</div>
@@ -341,23 +515,23 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 						<div class="swiper-wrapper">
 							<!-- Single Slide -->
 							<div class="swiper-slide item">
-								<img src="/assets/img/content/screenshot-1.jpg" alt="">
+								<img src="assets/img/content/screenshot-1.jpg" alt="">
 							</div>
 							<!-- Single Slide -->
 							<div class="swiper-slide item">
-								<img src="/assets/img/content/screenshot-2.jpg" alt="">
+								<img src="assets/img/content/screenshot-2.jpg" alt="">
 							</div>
 							<!-- Single Slide -->
 							<div class="swiper-slide item">
-								<img src="/assets/img/content/screenshot-3.jpg" alt="">
+								<img src="assets/img/content/screenshot-3.jpg" alt="">
 							</div>
 							<!-- Single Slide -->
 							<div class="swiper-slide item">
-								<img src="/assets/img/content/screenshot-4.jpg" alt="">
+								<img src="assets/img/content/screenshot-4.jpg" alt="">
 							</div>
 							<!-- Single Slide -->
 							<div class="swiper-slide item">
-								<img src="/assets/img/content/screenshot-5.jpg" alt="">
+								<img src="assets/img/content/screenshot-5.jpg" alt="">
 							</div>
 						</div>
 						<div class="swiper-pagination"></div>
@@ -379,7 +553,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 									<div class="swiper-slide item text-center p-3 p-md-5">
 										<!-- Review Meta -->
 										<div class="review-meta d-flex flex-column justify-content-center">
-											<img class="rounded-pill avatar-md mx-auto" src="/assets/img/content/avatar-1.png" alt="">
+											<img class="rounded-pill avatar-md mx-auto" src="assets/img/content/avatar-1.png" alt="">
 											<div class="reviewer mt-3">
 												<h5 class="reviewer-name mt-0 mb-2">Michael Turner</h5>
 												<span>CEO, WebCraft Solutions</span>
@@ -399,7 +573,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 									<div class="swiper-slide item text-center p-3 p-md-5">
 										<!-- Review Meta -->
 										<div class="review-meta d-flex flex-column justify-content-center">
-											<img class="rounded-pill avatar-md mx-auto" src="/assets/img/content/avatar-2.png" alt="">
+											<img class="rounded-pill avatar-md mx-auto" src="assets/img/content/avatar-2.png" alt="">
 											<div class="reviewer mt-3">
 												<h5 class="reviewer-name mt-0 mb-2">Sarah Jenkins</h5>
 												<span>Product Designer, Innovate Labs</span>
@@ -413,13 +587,13 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 											<i class="fas fa-star text-warning"></i>
 											<i class="fas fa-star text-warning"></i>
 										</div>
-										<p class="review-text">gReader App exceeded our expectations with its ease of use and powerful features. Perfect for anyone looking to create high-quality landing pages.</p>
+										<p class="review-text">sApp exceeded our expectations with its ease of use and powerful features. Perfect for anyone looking to create high-quality landing pages.</p>
 									</div>
 									<!-- Single Slide -->
 									<div class="swiper-slide item text-center p-3 p-md-5">
 										<!-- Review Meta -->
 										<div class="review-meta d-flex flex-column justify-content-center">
-											<img class="rounded-pill avatar-md mx-auto" src="/assets/img/content/avatar-3.png" alt="">
+											<img class="rounded-pill avatar-md mx-auto" src="assets/img/content/avatar-3.png" alt="">
 											<div class="reviewer mt-3">
 												<h5 class="reviewer-name mt-0 mb-2">Amanda Clark</h5>
 												<span>UX/UI Specialist, Pixel Hive</span>
@@ -452,7 +626,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 					<div class="col-12 col-md-10 col-lg-7">
 						<!-- Intro -->
 						<div class="intro text-center mb-4">
-							<h2 class="title mt-0">Unlock Full Power Of gReader App</h2>
+							<h2 class="title mt-0">Unlock Full Power Of sApp</h2>
 							<p>Maximize your potential by unlocking advanced features and tools that give you complete control over your landing page designs and performance.</p>
 						</div>
 					</div>
@@ -466,7 +640,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 								<div class="pricing-table text-center wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.4s">
 									<!-- Plan Icon -->
 									<div class="plan-icon">
-										<img class="avatar-lg" src="/assets/img/content/basic.png" alt="">
+										<img class="avatar-lg" src="assets/img/content/basic.png" alt="">
 									</div>
 									<span class="package-type d-block mt-3">Basic</span>
 									<h2 class="package-price clip-text text-effect my-3"><small>$</small>49</h2>
@@ -490,7 +664,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 								<div class="pricing-table text-center wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.4s">
 									<!-- Plan Icon -->
 									<div class="plan-icon">
-										<img class="avatar-lg" src="/assets/img/content/premium.png" alt="">
+										<img class="avatar-lg" src="assets/img/content/premium.png" alt="">
 									</div>
 									<span class="package-type d-block mt-3">Pro</span>
 									<h2 class="package-price clip-text text-effect my-3"><small>$</small>129</h2>
@@ -535,17 +709,17 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-10">
-						<!-- gReader App Accordion -->
+						<!-- sApp Accordion -->
 						<div class="accordion accordion-flush" id="sapp-accordion">
 							<!-- Accordion Item -->
 							<div class="accordion-item">
 								<h4 class="accordion-header">
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-									How to install gReader App?
+									How to install sApp?
 									</button>
 								</h4>
 								<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#sapp-accordion">
-									<div class="accordion-body">To install gReader App, follow the <a href="#">step-by-step instructions</a> in the provided documentation. It covers everything you need to set up and customize the theme effortlessly.</div>
+									<div class="accordion-body">To install sApp, follow the <a href="#">step-by-step instructions</a> in the provided documentation. It covers everything you need to set up and customize the theme effortlessly.</div>
 								</div>
 							</div>
 
@@ -569,7 +743,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 									</button>
 								</h4>
 								<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#sapp-accordion">
-									<div class="accordion-body">Absolutely! gReader App offers a free trial that gives you full access to its <a href="#">core features</a>. This allows you to explore the theme, test its capabilities, and determine if it fits your needs before making a purchase decision.</div>
+									<div class="accordion-body">Absolutely! sApp offers a free trial that gives you full access to its <a href="#">core features</a>. This allows you to explore the theme, test its capabilities, and determine if it fits your needs before making a purchase decision.</div>
 								</div>
 							</div>
 
@@ -610,16 +784,16 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 					<div class="col-12 col-md-10 col-lg-9">
 						<!-- Content -->
 						<div class="content text-center">
-							<h2 class="text-white">gReader App is available for all devices</h2>
-							<p class="text-white">Enjoy the versatility of gReader App, designed to seamlessly function on all devices. Whether you're using a smartphone, tablet, or desktop, download the app now and experience its powerful features anytime, anywhere!</p>
+							<h2 class="text-white">sApp is available for all devices</h2>
+							<p class="text-white">Enjoy the versatility of sApp, designed to seamlessly function on all devices. Whether you're using a smartphone, tablet, or desktop, download the app now and experience its powerful features anytime, anywhere!</p>
 
 							<!-- Download Button -->
 							<div class="button-group download-button justify-content-center">
 								<a href="download.html">
-									<img src="/assets/img/content/google-play.png" alt="">
+									<img src="assets/img/content/google-play.png" alt="">
 								</a>
 								<a href="download.html">
-									<img src="/assets/img/content/app-store.png" alt="">
+									<img src="assets/img/content/app-store.png" alt="">
 								</a>
 							</div>
 							<span class="d-block fst-italic fw-light text-white mt-3">* Available on iPhone, iPad and all Android devices</span>
@@ -637,7 +811,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 					<div class="col-12 col-md-10 col-lg-7">
 						<div class="content text-center">
 							<h2 class="mt-0">Subscribe to get updates</h2>
-							<p>Stay in the loop! Subscribe now to receive the latest news, updates, and exclusive offers from gReader App directly to your inbox.</p>
+							<p>Stay in the loop! Subscribe now to receive the latest news, updates, and exclusive offers from sApp directly to your inbox.</p>
 
 							<!-- Subscribe Form -->
 							<form class="contact-form outlined">
@@ -706,7 +880,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 						</div>
 					</div>
 					<div class="col-12 col-md-6 mt-4 mt-md-0">
-						<form id="contact-form" class="contact-form outlined" method="POST" action="/assets/php/mail.php">
+						<form id="contact-form" class="contact-form outlined" method="POST" action="assets/php/mail.php">
 							<div class="form-floating mb-3">
 								<input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
 								<label for="name">Name</label>
@@ -736,7 +910,129 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 		<div class="height-emulator d-none d-lg-block"></div>
 		<!--====== Height Emulator Area End ======-->
 
-		
+		<!--====== Footer Area Start ======-->
+		<footer class="footer-area footer-fixed p-0">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row items">
+						<div class="col-12 col-sm-6 col-lg-3 item">
+							<!-- Footer Items -->
+							<div class="footer-items">
+								<!-- Logo -->
+								<a class="navbar-brand" href="index.html">
+									<img class="logo" src="assets/img/logo/logo.png" alt="">
+								</a>
+								<p class="slug mt-3">The Next-Level Solutions for Landing Pages. Perfect Touch Enhances your Business.</p>
+
+								<hr>
+
+								<!-- Social Icons -->
+								<div class="social-icons d-flex mt-3">
+									<a class="icon has-overlay overlay-gradient" href="#">
+										<i class="fa-brands fa-facebook-f"></i>
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+									<a class="icon has-overlay overlay-gradient" href="#">
+										<i class="fa-brands fa-x-twitter"></i>
+										<i class="fa-brands fa-x-twitter"></i>
+									</a>
+									<a class="icon has-overlay overlay-gradient" href="#">
+										<i class="fa-brands fa-linkedin-in"></i>
+										<i class="fa-brands fa-linkedin-in"></i>
+									</a>
+									<a class="icon has-overlay overlay-gradient" href="#">
+										<i class="fa-brands fa-github"></i>
+										<i class="fa-brands fa-github"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 item">
+							<!-- Footer Items -->
+							<div class="footer-items">
+								<h4 class="footer-title mt-0">Useful Links</h4>
+
+								<!-- Navigation -->
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Services</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="blog-three-column.html">Blog</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 item">
+							<!-- Footer Items -->
+							<div class="footer-items">
+								<h4 class="footer-title mt-0">Product Help</h4>
+
+								<!-- Navigation -->
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a class="nav-link" href="faq.html">FAQ</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Privacy Policy</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Support</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Terms &amp; Conditions</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 item">
+							<!-- Footer Items -->
+							<div class="footer-items">
+								<h4 class="footer-title mt-0">Download</h4>
+
+								<!-- Download Button -->
+								<div class="button-group download-button">
+									<a href="download.html">
+										<img src="assets/img/content/google-play-black.png" alt="">
+									</a>
+									<a href="download.html">
+										<img src="assets/img/content/app-store-black.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<!-- Copyright Area -->
+							<div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center text-center py-4">
+								<span>&copy; 2020-2025 sApp | All rights reserved.</span>
+								<span>Made with <i class="fa-solid fa-heart"></i> By <a href="https://themeforest.net/user/theme_land" target="_blank">Themeland</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--====== Footer Area End ======-->
 
 		<!--====== Modal Search Area Start ======-->
 		<div id="search" class="p-0 modal fade">
@@ -800,23 +1096,24 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 	<!-- ***** All jQuery Plugins ***** -->
 
 	<!-- jQuery(necessary for all JavaScript plugins) -->
-	
+	<script src="assets/js/vendor/jquery.min.js"></script>
 
 	<!-- Bootstrap js -->
-	
-	
+	<script src="assets/js/vendor/popper.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
 
 	<!-- Plugins js -->
-	
-	
-	
-	
-	
-	
-	
-	
+	<script src="assets/js/vendor/slider.min.js"></script>
+	<script src="assets/js/vendor/owl.carousel.min.js"></script>
+	<script src="assets/js/vendor/counterup.js"></script>
+	<script src="assets/js/vendor/waypoint.js"></script>
+	<script src="assets/js/vendor/aos.js"></script>
+	<script src="assets/js/vendor/wow.min.js"></script>
+	<script src="assets/js/vendor/countdown.min.js"></script>
+	<script src="assets/js/vendor/gallery.min.js"></script>
 
 	<!-- Main js -->
-	
+	<script src="assets/js/main.js"></script>
+</body>
 
-</MarketingLayout>
+</html>

@@ -1,0 +1,283 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+---
+<MarketingLayout title="pricing - greaderapp.com">
+
+	<div class="main">
+		<!-- ***** Preloader Start ***** -->
+		<div class="preloader-main">
+			<div class="preloader-wapper">
+				<svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+					<defs>
+						<filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo" />
+						</filter>
+					</defs>
+					<g filter="url(#goo)">
+						<circle class="dot" cx="50" cy="50" r="25" fill="#8731E8" />
+						<circle class="dot" cx="50" cy="50" r="25" fill="#8731E8" />
+					</g>
+				</svg>
+				<div>
+					<div class="loader-section section-left"></div>
+					<div class="loader-section section-right"></div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Preloader End ***** -->
+
+		
+
+		<!-- ***** Breadcrumb Area Start ***** -->
+		<section id="home" class="breadcrumb-area has-overlay overlay-gradient d-flex align-items-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<!-- Breamcrumb Content -->
+						<div class="breadcrumb-content text-center">
+							<h2 class="text-white">Our Price Plan</h2>
+							<ol class="breadcrumb d-flex justify-content-center">
+								<li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+								<li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+								<li class="breadcrumb-item text-white active">Pricing</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Breadcrumb Area End ***** -->
+
+		<!-- ***** Price Plan Area Start ***** -->
+		<section id="pricing" class="price-plan-area primary-bg">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-10 col-lg-8">
+						<div class="row items">
+							<div class="col-12 col-md-6 item">
+								<!-- Pricing Table -->
+								<div class="pricing-table text-center wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.4s">
+									<!-- Plan Icon -->
+									<div class="plan-icon">
+										<img class="avatar-lg" src="/assets/img/content/basic.png" alt="">
+									</div>
+									<span class="package-type d-block mt-3">Basic</span>
+									<h2 class="package-price clip-text text-effect my-3"><small>$</small>49</h2>
+
+									<!-- Package List -->
+									<ul class="package-list list-group list-group-flush">
+										<li class="list-group-item">5GB Linux Web Space</li>
+										<li class="list-group-item">5 MySQL Databases</li>
+										<li class="list-group-item">24/7 Tech Support</li>
+										<li class="list-group-item">Daily Backups</li>
+									</ul>
+
+									<!-- Package Button -->
+									<div class="package-button">
+										<a href="signup.html" class="btn mt-3 mt-md-4">Sign Up</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 item">
+								<!-- Pricing Table -->
+								<div class="pricing-table text-center wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.4s">
+									<!-- Plan Icon -->
+									<div class="plan-icon">
+										<img class="avatar-lg" src="/assets/img/content/premium.png" alt="">
+									</div>
+									<span class="package-type d-block mt-3">Pro</span>
+									<h2 class="package-price clip-text text-effect my-3"><small>$</small>129</h2>
+
+									<!-- Package List -->
+									<ul class="package-list list-group list-group-flush">
+										<li class="list-group-item">10GB Linux Web Space</li>
+										<li class="list-group-item">50 MySQL Databases</li>
+										<li class="list-group-item">Unlimited Email</li>
+										<li class="list-group-item">Daily Backups</li>
+									</ul>
+
+									<!-- Package Button -->
+									<div class="package-button">
+										<a href="signup.html" class="btn mt-3 mt-md-4">Sign Up</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center text-center mt-5">
+					<span class="notice d-block mt-md-5">Not sure what to choose? <a href="contact.html">Contact Us</a></span>
+				</div>
+			</div>
+		</section>
+		<!-- ***** Price Plan Area End ***** -->
+
+		<!-- ***** FAQ Area Start ***** -->
+		<section class="faq">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-10 col-lg-7">
+						<!-- Intro -->
+						<div class="intro text-center">
+							<h2 class="title mt-0">Frequently Asked Questions</h2>
+							<p>Find answers to the most common questions, covering everything from setup to advanced features, to help you get the most out of the platform.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-10">
+						<!-- gReader App Accordion -->
+						<div class="accordion accordion-flush" id="sapp-accordion">
+							<!-- Accordion Item -->
+							<div class="accordion-item">
+								<h4 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+									How to install gReader App?
+									</button>
+								</h4>
+								<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#sapp-accordion">
+									<div class="accordion-body">To install gReader App, follow the <a href="#">step-by-step instructions</a> in the provided documentation. It covers everything you need to set up and customize the theme effortlessly.</div>
+								</div>
+							</div>
+
+							<!-- Accordion Item -->
+							<div class="accordion-item">
+								<h4 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+									How can I edit my personal information?
+									</button>
+								</h4>
+								<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#sapp-accordion">
+									<div class="accordion-body">You can easily edit your personal information by <a href="#">navigating</a> to the profile settings within the app. From there, update your details and save the changes instantly.</div>
+								</div>
+							</div>
+
+							<!-- Accordion Item -->
+							<div class="accordion-item">
+								<h4 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+									Do you have a free trail?
+									</button>
+								</h4>
+								<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#sapp-accordion">
+									<div class="accordion-body">Absolutely! gReader App offers a free trial that gives you full access to its <a href="#">core features</a>. This allows you to explore the theme, test its capabilities, and determine if it fits your needs before making a purchase decision.</div>
+								</div>
+							</div>
+
+							<!-- Accordion Item -->
+							<div class="accordion-item">
+								<h4 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+									Can I get support from the Author?
+									</button>
+								</h4>
+								<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#sapp-accordion">
+									<div class="accordion-body">Yes, you can get dedicated support from the author. If you have any questions or encounter issues, simply reach out through the support channels provided in the documentation or marketplace. The author is available to assist with any queries related to installation, customization, or troubleshooting.</div>
+								</div>
+							</div>
+
+							<!-- Accordion Item -->
+							<div class="accordion-item">
+								<h4 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+									Contact form isn't working?
+									</button>
+								</h4>
+								<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#sapp-accordion">
+									<div class="accordion-body">If the contact form isn't working, first ensure that all required fields are filled out correctly. If the issue persists, please reach out to <a href="#">support</a> for assistance, and provide details about the issue for a quicker resolution.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ***** FAQ Area End ***** -->
+
+		
+
+		<!--====== Modal Search Area Start ======-->
+		<div id="search" class="p-0 modal fade">
+			<div class="modal-dialog modal-dialog-slideout">
+				<div class="modal-content full">
+					<div class="modal-header" data-bs-dismiss="modal">
+						Search <i class="icon-close"></i>
+					</div>
+					<div class="modal-body">
+						<form class="row">
+							<div class="col-12 align-self-center p-0">
+								<div class="row">
+									<div class="col-12 p-0 pb-3">
+										<h2 class="modal-heading mt-0 mb-3">What are you looking for?</h2>
+										<form class="contact-form outlined">
+											<div class="form-floating mb-3">
+												<input type="text" class="form-control" name="keywords" id="keywords" placeholder="Enter Keywords">
+												<label for="keywords">Enter Keywords</label>
+											</div>
+											<input type="submit" class="search-submit" value="Search">
+										</form>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--====== Modal Search Area End ======-->
+
+		<!--====== Modal Responsive Menu Area Start ======-->
+		<div id="menu" class="modal fade p-0">
+			<div class="modal-dialog modal-dialog-slideout">
+				<div class="modal-content full">
+					<div class="modal-header" data-bs-dismiss="modal">
+						Menu <i class="icon-close"></i>
+					</div>
+					<div class="menu modal-body">
+						<div class="row w-100">
+							<div class="items p-0 col-12 text-center">
+								<!-- Append [navbar] -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--====== Modal Responsive Menu Area End ======-->
+
+		<!--====== Scroll To Top Area Start ======-->
+		<div id="scroll-to-top" class="scroll-to-top">
+			<a href="#home" class="smooth-anchor">
+				<i class="fa-solid fa-arrow-up"></i>
+			</a>
+		</div>
+		<!--====== Scroll To Top Area End ======-->
+	</div>
+
+
+	<!-- ***** All jQuery Plugins ***** -->
+
+	<!-- jQuery(necessary for all JavaScript plugins) -->
+	
+
+	<!-- Bootstrap js -->
+	
+	
+
+	<!-- Plugins js -->
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!-- Main js -->
+	
+
+</MarketingLayout>
