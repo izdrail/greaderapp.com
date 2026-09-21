@@ -1,4 +1,9 @@
----
+import os
+
+def write_file(path, content):
+    with open(path, 'w') as f: f.write(content)
+
+comp = """---
 const { title, subtitle, buttonText, type } = Astro.props;
 ---
 <div class="hero-form">
@@ -20,3 +25,6 @@ const { title, subtitle, buttonText, type } = Astro.props;
         <button type="submit" class="btn swap-icon">{buttonText}<i class="icon bi bi-arrow-right-short"></i></button>
     </form>
 </div>
+"""
+write_file('src/components/AuthForm.astro', comp)
+    

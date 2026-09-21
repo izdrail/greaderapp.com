@@ -1,4 +1,13 @@
----
+import os
+import re
+from bs4 import BeautifulSoup
+
+def read_file(path):
+    with open(path, 'r') as f: return f.read()
+def write_file(path, content):
+    with open(path, 'w') as f: f.write(content)
+
+comp = """---
 const { title, image, url, date, author, comments } = Astro.props;
 ---
 <div class="single-blog-post">
@@ -20,3 +29,6 @@ const { title, image, url, date, author, comments } = Astro.props;
         <a href={url} class="btn btn-bordered mt-4">Read More</a>
     </div>
 </div>
+"""
+write_file('src/components/BlogCard.astro', comp)
+    

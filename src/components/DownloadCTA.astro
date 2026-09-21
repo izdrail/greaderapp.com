@@ -1,4 +1,22 @@
 ---
-// DownloadCTA.astro
+const { title = "Download gReader App today!" } = Astro.props;
 ---
-<div>DownloadCTA.astro placeholder</div>
+<section class="section download-area overlay-dark ptb_100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <!-- Download Text -->
+                <div class="download-text text-center">
+                    <h2 class="text-white">{title}</h2>
+                    <p class="text-white my-3 d-sm-block d-none">Available on iOS and Android. Open Source and privacy friendly.</p>
+                    <p class="text-white my-3 d-block d-sm-none">Available on iOS and Android.</p>
+                    <!-- Store Buttons -->
+                    <div class="button-group store-buttons d-flex justify-content-center">
+                        <a href="#" class="btn btn-bordered text-white mx-2"><i class="fab fa-apple mr-2"></i>App Store</a>
+                        <a href="#" class="btn btn-bordered text-white mx-2"><i class="fab fa-google-play mr-2"></i>Play Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
