@@ -1,4 +1,6 @@
 ---
+import Hero from "../components/Hero.astro";
+
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 ---
 <MarketingLayout title="index - greaderapp.com">
@@ -29,31 +31,7 @@ import MarketingLayout from '../layouts/MarketingLayout.astro';
 
 		
 
-		<!-- ***** Hero Section Start ***** -->
-		<section id="home" class="hero-section layout-2">
-			<div class="shapes-container">
-				<div class="bg-shape has-overlay overlay-gradient overflow-hidden"></div>
-			</div>
-			<div class="container">
-				<div class="row justify-content-between align-items-center">
-					<div class="col-12 col-md-7 col-lg-6">
-						<!-- Hero Content -->
-						<div class="hero-content">
-							<h1>Creative way to Showcase your App</h1>
-							<p class="sub-heading my-4">Present your app in a unique and engaging manner with gReader App, designed to highlight its features and attract potential users effectively.</p>
-							<a href="pricing.html" class="btn swap-icon">Get Started<i class="icon bi bi-arrow-right-short"></i></a>
-						</div>
-					</div>
-					<div class="col-12 col-md-5 col-lg-5 mt-4 mt-md-0">
-						<!-- Hero Thumb -->
-						<div class="hero-thumb mx-auto" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-							<img src="/assets/img/content/thumb-1.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ***** Hero Section End ***** -->
+		<Hero />
 
 		<!-- ***** Features Area Start ***** -->
 		<section id="features" class="features-section pt-0">
