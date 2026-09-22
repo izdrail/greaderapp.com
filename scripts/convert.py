@@ -79,7 +79,7 @@ for filepath in html_files:
         body_content = body_content.replace("'assets/", "'/assets/")
         
         # Some app name updates
-        body_content = body_content.replace('sApp', 'gReader App')
+        body_content = body_content.replace('sApp', 'gReader News')
         
         astro_content = f"""---
 import BaseLayout from '../layouts/BaseLayout.astro';
