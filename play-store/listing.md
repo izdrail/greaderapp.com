@@ -6,8 +6,8 @@ real captures of the running app (https://app.greaderapp.com) with live feeds.
 
 ## Assets
 
-- `icon-512.png` - hi-res icon, 512x512 PNG (upscaled from the app's 192px
-  master; replace with a vector render before submission if one exists)
+- `icon-512.png` - hi-res icon, 512x512 PNG, rendered from the app's
+  vector logo (`src/assets/logo/logo.svg` in the app repo)
 - `feature-graphic.png` - feature graphic, 1024x500 PNG
 - `phone-screenshots/` - 8 phone screenshots: feeds, reader, menu,
   subscriptions, settings, voice, dark, podcasts
