@@ -11,6 +11,14 @@ real captures of the running app (https://app.greaderapp.com) with live feeds.
 - `feature-graphic.png` - feature graphic, 1024x500 PNG
 - `phone-screenshots/` - 8 phone screenshots: feeds, reader, menu,
   subscriptions, settings, voice, dark, podcasts
+- `7-inch-tablet/` - 7 tablet screenshots, 1200x1920 PNG (9:16): feeds,
+  reader, menu, subscriptions, settings, voice, dark
+- `10-inch-tablet/` - 7 tablet screenshots, 1600x2560 PNG (9:16): same views
+- `chromebook/` - 4 screenshots, 1920x1080 PNG (16:9): feeds, reader,
+  settings, dark
+- `android-xr/` - 4 screenshots, 1920x1080 PNG (16:9): feeds, reader,
+  settings, dark (same desktop layout captures; retake in an XR emulator
+  before submission if Google rejects web captures for XR)
 
 ## Title
 
