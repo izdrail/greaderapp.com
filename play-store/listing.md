@@ -31,7 +31,7 @@ Fast, open-source RSS reader. Offline reading, podcasts and voice reading.
 ## Full description
 
 gReader is a fast, focused RSS reader inspired by the classic gReader
-workflow. No ads, no subscription, no algorithm deciding what you should
+workflow. No subscription, no algorithm deciding what you should
 read.
 
 - All, unread and starred views with fast search and filters
@@ -53,5 +53,5 @@ News & Magazines
 
 ## Content notes
 
-- No ads, no in-app purchases
+- No in-app purchases, no subscription
 - Target audience: everyone
