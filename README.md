@@ -1,5 +1,7 @@
 # greaderapp.com
 
+![gReader - a fast, focused, open-source RSS reader](play-store/feature-graphic.png)
+
 Astro marketing site for the independent, open-source gReader-inspired RSS reader.
 
 ## Development
